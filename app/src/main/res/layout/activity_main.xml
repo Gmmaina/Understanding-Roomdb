@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/background_color"
+        android:contentDescription="FAB"
         app:fabSize="auto"
         app:layout_anchor="@id/bottom_app_bar"
         app:srcCompat="@android:drawable/ic_input_add"
@@ -52,12 +53,12 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/baseline_sort_24"
-                app:layout_constraintBottom_toBottomOf="@id/searchcView"
+                app:layout_constraintBottom_toBottomOf="@id/searchView"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/searchcView" />
+                app:layout_constraintTop_toTopOf="@+id/searchView" />
 
             <androidx.appcompat.widget.SearchView
-                android:id="@+id/searchcView"
+                android:id="@+id/searchView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"

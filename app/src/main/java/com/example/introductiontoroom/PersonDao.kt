@@ -26,4 +26,7 @@ interface PersonDao {
     @Query("SELECT * FROM person_table")
     fun getAllData(): Flow<List<Person>>
 
+    @Query("SELECT * FROM person_table WHERE person_name LIKE '%' || :query || '%' or person_city LIKE '%' || :query || '%' or person_age LIKE '%' || :query || '%'")
+    fun getSearchedData(query: String) : Flow<List<Person>>
+
 }
